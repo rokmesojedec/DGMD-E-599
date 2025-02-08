@@ -1,0 +1,6 @@
+<h2>Manual Email Login</h2>
+<input type="email" [(ngModel)]="email" placeholder="Email" />
+<input type="password" [(ngModel)]="password" placeholder="Password" />
+<button (click)="login()">Login</button>
+<button (click)="signup()">Sign Up</button>
+<p *ngIf="error" style="color: red;">{{ error }}</p>

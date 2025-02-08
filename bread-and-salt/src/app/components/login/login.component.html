@@ -1,0 +1,8 @@
+<div *ngIf="user(); else loginUI">
+    <p>Welcome, {{ user()?.displayName || 'User' }}!</p>
+    <button (click)="logout()">Logout</button>
+</div>
+
+<ng-template #loginUI>
+    <div id="firebaseui-auth-container"></div>
+</ng-template>
